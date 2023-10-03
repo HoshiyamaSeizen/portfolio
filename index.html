@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div class="overlay">
+			<p class="message">
+				На данный момент вёрстка сайта не адаптивна, поэтому содержимое может отображаться
+				некорректно. Пожалуйста, зайдите на сайт с устройтсва с бОльшим расширением экрана.
+			</p>
+		</div>
+		<div class="slide first">
+			<div class="slide-content first">
+				<div class="first-slide-main">
+					<div class="photo">
+						<div class="frame">
+							<div class="photo-content"></div>
+						</div>
+					</div>
+					<div class="info">
+						<p class="name">Назар Афанасьев</p>
+						<p class="footer">Web-Developer</p>
+					</div>
+				</div>
+			</div>
+			<div class="btn-slide next" onclick="scrollToSlide(1)">
+				<img class="control" src="./svg/down.svg" />
+			</div>
+		</div>
+		<div class="slide">
+			<div class="btn-slide prev" onclick="scrollToSlide(0)">
+				<img class="control" src="./svg/up.svg" />
+			</div>
+			<div class="slide-content">
+				<div class="block">
+					<h3>Технические навыки</h3>
+					<ul class="nobullets">
+						<li><img class="logo" src="./svg/html.svg" />HTML</li>
+						<li><img class="logo" src="./svg/css.svg" />CSS</li>
+						<li><img class="logo" src="./svg/js.svg" />JS</li>
+						<li><img class="logo" src="./svg/node.svg" />NodeJS & NPM</li>
+						<li><img class="logo" src="./svg/react.svg" />React</li>
+						<li><img class="logo" src="./svg/redux.svg" />React Redux</li>
+						<li><img class="logo" src="./svg/nextjs.svg" />NextJS</li>
+						<li><img class="logo" src="./svg/vue.svg" />Vue</li>
+						<li><img class="logo" src="./svg/pug.svg" />Pug</li>
+						<li><img class="logo" src="./svg/sass.svg" />Sass</li>
+						<li><img class="logo" src="./svg/bootstrap.svg" />Bootstrap</li>
+						<li><img class="logo" src="./svg/express.svg" />Express</li>
+						<li><img class="logo" src="./svg/mongodb.svg" />MongoDB</li>
+						<li><img class="logo" src="./svg/git.svg" />Git & GitHub</li>
+					</ul>
+				</div>
+				<div class="block">
+					<h3>Профессиональные навыки</h3>
+					<ul>
+						<li>Разработка интерфейсов</li>
+						<li>Продумывание логики приложений</li>
+						<li>Оптимизация существующего кода</li>
+						<li>Тестирование вебприложений</li>
+						<li>Связь клиентской и серверной частей приложения</li>
+					</ul>
+				</div>
+			</div>
+			<div class="btn-slide next" onclick="scrollToSlide(2)">
+				<img class="control" src="./svg/down.svg" />
+			</div>
+		</div>
+		<div class="slide">
+			<div class="btn-slide prev" onclick="scrollToSlide(1)">
+				<img class="control" src="./svg/up.svg" />
+			</div>
+			<div class="slide-content">
+				<div class="block">
+					<h3>Образование</h3>
+					<ul>
+						<li>Университет: СПбГЭТУ (ЛЭТИ), очное отделение</li>
+						<li>Дата окончания: 2024г. (Бакалавриат)</li>
+						<li>Факультет компьютерных технологий и информатики</li>
+						<li>Направление: прикладная математика и информатика</li>
+						<li>Средний балл: 4.7</li>
+						<li>
+							Любимые предметы: Web-программирование, Алгоритмы и структуры данных,
+							Построение и анализ алгоритмов, Сети и телекоммуникации
+						</li>
+					</ul>
+					<img class="leti-logo" src="./images/leti_logo.png" alt="LETI" />
+				</div>
+				<div class="block">
+					<h3>Опыт работы</h3>
+					<ul>
+						<li>АО «НИЦ СПб ЭТУ» (2022-2023)</li>
+						<img class="nic-logo" src="./images/nic_logo.png" alt="LETI" />
+						<li>Собственные и учебные проекты</li>
+					</ul>
+				</div>
+			</div>
+			<div class="btn-slide next" onclick="scrollToSlide(3)">
+				<img class="control" src="./svg/down.svg" />
+			</div>
+		</div>
+		<div class="slide">
+			<div class="btn-slide prev" onclick="scrollToSlide(2)">
+				<img class="control" src="./svg/up.svg" />
+			</div>
+			<div class="slide-content">
+				<div class="block">
+					<h3>Примеры кода</h3>
+					<ul class="examples">
+						<li>
+							<p class="repo-name">nextjs-messenger</p>
+							<p>Мессенджер на NextJS</p>
+							<a href="https://github.com/HoshiyamaSeizen/nextjs-messenger">GitHub</a>
+						</li>
+						<li>
+							<p class="repo-name">stock-exchange-app</p>
+							<p>Приложение эмуляции торгов на Nest, React и Vue</p>
+							<a href="https://github.com/HoshiyamaSeizen/stock-exchange-app">GitHub</a>
+						</li>
+						<li>
+							<p class="repo-name">game-web</p>
+							<p>Игра с использованием HTML сanvas</p>
+							<a href="https://github.com/HoshiyamaSeizen/game-web">GitHub</a>
+						</li>
+						<li>
+							<p class="repo-name">library-app</p>
+							<p>Система управления домашней библиотекой на Express и Pug</p>
+							<a href="https://github.com/HoshiyamaSeizen/library-app">GitHub</a>
+						</li>
+						<li>
+							<p class="repo-name">tetris</p>
+							<p>Тетрис на ванильном JavaScript</p>
+							<a href="https://github.com/HoshiyamaSeizen/tetris">GitHub</a> |
+							<a href="https://hoshiyamaseizen.github.io/tetris/">GitHub Pages</a>
+						</li>
+					</ul>
+				</div>
+				<div class="block">
+					<h3>Дополнительная информация</h3>
+					<ul>
+						<li>
+							Иностранные языки:
+							<p><i>Английский (В2 – выше среднего)</i></p>
+							<p><i>Японский (N4 - начинающий)</i></p>
+						</li>
+						<li>Предпочитаемая среда разработки: <i>Visual Studio Code</i></li>
+						<li>
+							Контакты:
+							<a href="mailto:nazarafanasyev@gmail.com"><i>nazarafanasyev@gmail.com</i></a>
+						</li>
+					</ul>
+					<div class="social">
+						<a href="https://vk.com/hoshiyama" target="_blank"><img src="./svg/vk.svg" /></a>
+						<a href="https://github.com/HoshiyamaSeizen" target="_blank"
+							><img src="./svg/github.svg"
+						/></a>
+						<a href="https://t.me/ho4yama" target="_blank"><img src="./svg/tg.svg" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
